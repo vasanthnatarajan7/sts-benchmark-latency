@@ -1,0 +1,356 @@
+{
+  "generatedAt": "2026-11-08T02:43:27.538Z",
+  "config": {
+    "trials": 20,
+    "mode": "latency",
+    "input": {
+      "type": "clip",
+      "path": "short.pcm",
+      "seconds": 5.888
+    }
+  },
+  "results": [
+    {
+      "id": "rime-prism",
+      "label": "Rime Prism",
+      "meta": {
+        "transport": "websocket",
+        "model": "prism-v0",
+        "exposesText": true,
+        "duplex": false,
+        "vendorHosted": true
+      },
+      "status": "scored",
+      "trials": 20,
+      "attempted": 20,
+      "failures": 0,
+      "earlyReplies": 0,
+      "trialsWithInterruptedReply": 0,
+      "trialsTalkedOver": 0,
+      "turnsPerUtterance": {
+        "n": 20,
+        "min": 1,
+        "p50": 1,
+        "p95": 1,
+        "max": 1,
+        "mean": 1,
+        "stdev": 0,
+        "iqr": 0
+      },
+      "turnDetectMs": {
+        "n": 20,
+        "min": 372,
+        "p50": 413.1,
+        "p95": 416,
+        "max": 416.1,
+        "mean": 398.2,
+        "stdev": 18.7,
+        "iqr": 39.2
+      },
+      "postDetectMs": {
+        "n": 20,
+        "min": 1.7,
+        "p50": 11.4,
+        "p95": 34.9,
+        "max": 41,
+        "mean": 16,
+        "stdev": 12.2,
+        "iqr": 22.2
+      },
+      "ttfaHeardMs": {
+        "n": 20,
+        "min": 374.7,
+        "p50": 417.9,
+        "p95": 450.8,
+        "max": 455.4,
+        "mean": 414.2,
+        "stdev": 25.6,
+        "iqr": 43.5
+      },
+      "ttfaAudibleMs": {
+        "n": 20,
+        "min": 387.8,
+        "p50": 481.7,
+        "p95": 554.4,
+        "max": 575.7,
+        "mean": 478.7,
+        "stdev": 59.5,
+        "iqr": 106.3
+      },
+      "trialsWithoutZeroPoint": 0,
+      "errors": [],
+      "ttfaMs": {
+        "n": 20,
+        "min": 374.7,
+        "p50": 417.9,
+        "p95": 450.8,
+        "max": 455.4,
+        "mean": 414.2,
+        "stdev": 25.6,
+        "iqr": 43.5
+      },
+      "ttfbMs": {
+        "n": 20,
+        "min": 6011.4,
+        "p50": 6105.5,
+        "p95": 6219.9,
+        "max": 6343.5,
+        "mean": 6120.7,
+        "stdev": 91.3,
+        "iqr": 166.8
+      }
+    },
+    {
+      "id": "openai-realtime",
+      "label": "OpenAI Realtime (gpt-realtime-2.1)",
+      "meta": {
+        "transport": "websocket",
+        "model": "gpt-realtime-2.1",
+        "exposesText": true,
+        "duplex": true,
+        "vendorHosted": true
+      },
+      "status": "scored",
+      "trials": 20,
+      "attempted": 20,
+      "failures": 0,
+      "earlyReplies": 0,
+      "trialsWithInterruptedReply": 0,
+      "trialsTalkedOver": 0,
+      "turnsPerUtterance": {
+        "n": 20,
+        "min": 1,
+        "p50": 1,
+        "p95": 1,
+        "max": 1,
+        "mean": 1,
+        "stdev": 0,
+        "iqr": 0
+      },
+      "turnDetectMs": {
+        "n": 20,
+        "min": 729.7,
+        "p50": 746.3,
+        "p95": 770.4,
+        "max": 784.1,
+        "mean": 749.6,
+        "stdev": 12.1,
+        "iqr": 8.5
+      },
+      "postDetectMs": {
+        "n": 20,
+        "min": 494.3,
+        "p50": 711,
+        "p95": 861.7,
+        "max": 891.3,
+        "mean": 703.8,
+        "stdev": 106.2,
+        "iqr": 186.6
+      },
+      "ttfaHeardMs": {
+        "n": 20,
+        "min": 1263.9,
+        "p50": 1457.4,
+        "p95": 1601.2,
+        "max": 1632.6,
+        "mean": 1453.4,
+        "stdev": 98.5,
+        "iqr": 153.2
+      },
+      "ttfaAudibleMs": {
+        "n": 20,
+        "min": 1303.9,
+        "p50": 1482.4,
+        "p95": 1621.7,
+        "max": 1662.6,
+        "mean": 1480.9,
+        "stdev": 92.5,
+        "iqr": 137.2
+      },
+      "trialsWithoutZeroPoint": 0,
+      "errors": [],
+      "ttfaMs": {
+        "n": 20,
+        "min": 1263.9,
+        "p50": 1457.4,
+        "p95": 1601.2,
+        "max": 1632.6,
+        "mean": 1453.4,
+        "stdev": 98.5,
+        "iqr": 153.2
+      },
+      "ttfbMs": {
+        "n": 20,
+        "min": 6883.1,
+        "p50": 7125.3,
+        "p95": 7305,
+        "max": 7916.2,
+        "mean": 7154.7,
+        "stdev": 202.8,
+        "iqr": 165.5
+      }
+    },
+    {
+      "id": "gemini-live",
+      "label": "Gemini Live (gemini-3.8-live)",
+      "meta": {
+        "transport": "websocket",
+        "model": "gemini-3.8-live",
+        "exposesText": true,
+        "duplex": true,
+        "vendorHosted": true
+      },
+      "status": "scored",
+      "trials": 20,
+      "attempted": 20,
+      "failures": 0,
+      "earlyReplies": 0,
+      "trialsWithInterruptedReply": 0,
+      "trialsTalkedOver": 0,
+      "turnsPerUtterance": {
+        "n": 20,
+        "min": 1,
+        "p50": 1,
+        "p95": 1,
+        "max": 1,
+        "mean": 1,
+        "stdev": 0,
+        "iqr": 0
+      },
+      "turnDetectMs": null,
+      "postDetectMs": null,
+      "ttfaHeardMs": {
+        "n": 20,
+        "min": 1129.5,
+        "p50": 1155.7,
+        "p95": 1212.6,
+        "max": 1222.5,
+        "mean": 1162.4,
+        "stdev": 28.3,
+        "iqr": 40
+      },
+      "ttfaAudibleMs": {
+        "n": 20,
+        "min": 1156,
+        "p50": 1172.5,
+        "p95": 1242.6,
+        "max": 1252.5,
+        "mean": 1186.9,
+        "stdev": 29.9,
+        "iqr": 38.6
+      },
+      "trialsWithoutZeroPoint": 0,
+      "errors": [],
+      "ttfaMs": {
+        "n": 20,
+        "min": 1129.5,
+        "p50": 1155.7,
+        "p95": 1212.6,
+        "max": 1222.5,
+        "mean": 1162.4,
+        "stdev": 28.3,
+        "iqr": 40
+      },
+      "ttfbMs": {
+        "n": 20,
+        "min": 6653.1,
+        "p50": 6677,
+        "p95": 6755.7,
+        "max": 6800.3,
+        "mean": 6695.4,
+        "stdev": 37.8,
+        "iqr": 50.7
+      }
+    },
+    {
+      "id": "grok-voice",
+      "label": "xAI Grok Voice Agent (grok-voice-3.0)",
+      "meta": {
+        "transport": "websocket",
+        "model": "grok-voice-3.0",
+        "exposesText": true,
+        "duplex": true,
+        "vendorHosted": true
+      },
+      "status": "scored",
+      "trials": 20,
+      "attempted": 20,
+      "failures": 0,
+      "earlyReplies": 0,
+      "trialsWithInterruptedReply": 0,
+      "trialsTalkedOver": 0,
+      "turnsPerUtterance": {
+        "n": 20,
+        "min": 1,
+        "p50": 1,
+        "p95": 1,
+        "max": 1,
+        "mean": 1,
+        "stdev": 0,
+        "iqr": 0
+      },
+      "turnDetectMs": {
+        "n": 20,
+        "min": 430.2,
+        "p50": 453.1,
+        "p95": 542.6,
+        "max": 592.7,
+        "mean": 459.8,
+        "stdev": 38.1,
+        "iqr": 22.8
+      },
+      "postDetectMs": {
+        "n": 20,
+        "min": 2964.1,
+        "p50": 3035.3,
+        "p95": 3047.4,
+        "max": 3059.3,
+        "mean": 3034.4,
+        "stdev": 17.5,
+        "iqr": 7.7
+      },
+      "ttfaHeardMs": {
+        "n": 20,
+        "min": 3465.2,
+        "p50": 3488.2,
+        "p95": 3516,
+        "max": 3627.7,
+        "mean": 3494.2,
+        "stdev": 33.5,
+        "iqr": 26.5
+      },
+      "ttfaAudibleMs": {
+        "n": 20,
+        "min": 3502.1,
+        "p50": 3528.3,
+        "p95": 3601.2,
+        "max": 3667.7,
+        "mean": 3538.7,
+        "stdev": 35.7,
+        "iqr": 17.3
+      },
+      "trialsWithoutZeroPoint": 0,
+      "errors": [],
+      "ttfaMs": {
+        "n": 20,
+        "min": 3465.2,
+        "p50": 3488.2,
+        "p95": 3516,
+        "max": 3627.7,
+        "mean": 3494.2,
+        "stdev": 33.5,
+        "iqr": 26.5
+      },
+      "ttfbMs": {
+        "n": 20,
+        "min": 9230.1,
+        "p50": 9272.6,
+        "p95": 9421.5,
+        "max": 9756,
+        "mean": 9308.6,
+        "stdev": 112.9,
+        "iqr": 53
+      }
+    }
+  ]
+}
